@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+class interfacee{
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+            int number;
+
+        System.out.println("Select the button color");
+        System.out.println("1 - blue ");
+        System.out.println("2 - red");
+        System.out.println("3 - yellow");
+
+        ModelButton button = new ModelButton();
+            button.click(number = scan.nextInt());
+
+    }
+}
+
+
+
+class ModelButton{
+
+String button = "black";
+
+void click(int b){
+
+    switch (b){
+        case 1:
+            button ="blue";
+            System.out.println(button);
+            break;
+        case 2:
+            button ="red";
+            System.out.println(button);
+            break;
+        case 3:
+            button ="yellow";
+            System.out.println(button);
+            break;
+
+    }
+
+}
+
+}
